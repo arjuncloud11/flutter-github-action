@@ -18,7 +18,7 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: "stable"
-      - run: flutter -h
+      - run: flutter pub get
   build_appbundle:
     name: Build Flutter (Android)
     needs: [flutter_test]
